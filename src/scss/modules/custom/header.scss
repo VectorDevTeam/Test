@@ -1,0 +1,230 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1280;
+    height: 89px;
+    margin: 0 auto;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.496);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    transition: background 0.5s ease;
+
+    @media screen and (max-width: 1000px) {
+        &.active {
+            height: 100vh;
+            align-items: start;
+            background: rgba(0, 0, 0, 0.851);
+        }
+    }
+
+    // .header__logoBlock
+
+    &__logoBlock {
+        display: flex;
+        max-width: 170px;
+        align-items: center;
+    }
+
+    // .header__logoText
+
+    &__logoText {
+        margin-left: 10px;
+        @extend %fontText;
+        font-weight: bold;
+        color: #fff;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    // .header__navLink
+
+    &__nav {
+        @media screen and (max-width: 1000px) {
+            display: none;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                opacity: 0;
+
+                animation: navAnim .5s ease forwards alternate;
+            }
+        }
+    }
+
+    @keyframes navAnim {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        display: inline-block;
+        @extend %fontText;
+        padding: 8px 12px;
+        color: #fff;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: rgb(164, 164, 164);
+            transform: scale(1.1);
+        }
+    }
+
+    // .header__navLinkMenu
+
+    &__navLinkMenu {
+        display: none;
+        margin-top: 20px;
+
+        @media screen and (max-width: 1000px) {
+            display: block;
+        }
+    }
+
+    // .header__linkLoginMenu
+
+    &__linkLoginMenu {
+        display: none;
+        @extend %fontText;
+        padding: 8px 12px;
+        color: #fff;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: rgb(164, 164, 164);
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 1000px) {
+            display: inline-block;
+        }
+    }
+
+    // .header__linkRegisterMenu
+
+    &__linkRegisterMenu {
+        display: none;
+        @extend %fontText;
+        padding: 8px 25px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        color: #020202;
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $clrPrimary;
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 1000px) {
+            display: inline-block;
+        }
+    }
+
+    &__navLink {
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+    // .header__linkLogin
+
+    &__linkLogin {
+        display: inline-block;
+        @extend %fontText;
+        padding: 8px 12px;
+        color: #fff;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: rgb(164, 164, 164);
+            transform: scale(1.1);
+        }
+    }
+
+    // .header__linkRegister
+
+    &__linkRegister {
+        display: inline-block;
+        @extend %fontText;
+        padding: 8px 25px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        color: #020202;
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $clrPrimary;
+            transform: scale(1.1);
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        & > span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin-bottom: 7px;
+            background: #fff;
+            transform-origin: 5.5px;
+            transition: all 0.3s ease;
+
+            &:last-child {
+                margin-bottom: none;
+            }
+        }
+
+        &.active {
+            & > span {
+                transform: rotate(45deg);
+
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin-top: 12px;
+            display: block;
+        }
+    }
+}

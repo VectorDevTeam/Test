@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <title>Practice</title>
-  </head>
-  <body>
-    
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <title>Practice</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logoBlock">
+                <img src="./src/img/logoGreen.svg" />
+                <div class="header__logoText">Findtrend</div>
+            </div>
+            <nav class="header__nav">
+                <a class="header__link" href="#">About</a>
+                <a class="header__link" href="#">How it work</a>
+                <a class="header__link" href="#">Pricing</a>
+                <a class="header__link" href="#">Solution</a>
+                <a class="header__link" href="#">Features</a>
+
+                <div class="header__navLinkMenu">
+                    <a class="header__linkLoginMenu" href="#">Login</a>
+                    <a class="header__linkRegisterMenu" href="#">Register</a>
+                </div>
+            </nav>
+            <div class="header__navLink">
+                <a class="header__linkLogin" href="#">Login</a>
+                <a class="header__linkRegister" href="#">Register</a>
+            </div>
+            <button id="burger" class="header__burger">
+              <span></span>
+              <span></span>
+            </button>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h1 class="main__title title">
+                    Mininmize your tabs.<br />Find the trends!
+                </h1>
+                <div class="main__text text">
+                    <p>
+                        Don't let your computer memories consumes all of those
+                        browser tabs.
+                    </p>
+                    <p>
+                        Findtrend let you gathers all of your favorite website
+                        into one place.
+                    </p>
+                </div>
+                <div class="main__btnBlock">
+                    <a class="main__btnStart" href="#">GetStarted🔥</a>
+                    <img
+                        src="./src/img/main__arrow.png"
+                        alt=""
+                        class="main__btnArrow"
+                    />
+                </div>
+
+                <div class="main__socialLinks">
+                    <div class="main__socialLinkBlock">
+                        <img
+                            src="./src/img/twitterLogo.svg"
+                            alt=""
+                            class="main__socLinkLogo"
+                        />
+                        <a href="" class="main__socLink">Cryptopunk - Search</a>
+                        <div class="main__socLinkClose">
+                            <img src="./src/img/close.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="main__socialLinkBlock">
+                        <img
+                            src="./src/img/pinterestLogo.svg"
+                            alt=""
+                            class="main__socLinkLogo"
+                        />
+                        <a href="" class="main__socLink">Popular Design - Se</a>
+                        <div class="main__socLinkClose">
+                            <img src="./src/img/close.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="main__socialLinkBlock">
+                        <img
+                            src="./src/img/facebookLogo.svg"
+                            alt=""
+                            class="main__socLinkLogo"
+                        />
+                        <a href="" class="main__socLink">Product Design - Se</a>
+                        <div class="main__socLinkClose">
+                            <img src="./src/img/close.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="main__socialLinkBlock">
+                        <img
+                            src="./src/img/dribbleLogo.svg"
+                            alt=""
+                            class="main__socLinkLogo"
+                        />
+                        <a href="" class="main__socLink">Elon Musk - Search</a>
+                        <div class="main__socLinkClose">
+                            <img src="./src/img/close.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./src/app/app.js"></script>
+    </body>
 </html>
