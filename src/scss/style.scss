@@ -11,8 +11,8 @@
     @extend %fontTitle;
 
     @media screen and (max-width: 767px) {
-      font-size: 36px;
-      line-height: 40px;
+        font-size: 36px;
+        line-height: 40px;
     }
 }
 
@@ -22,7 +22,7 @@
     @media screen and (max-width: 767px) {
         font-size: 14px;
         line-height: 21px;
-      }
+    }
 }
 
 .container {
