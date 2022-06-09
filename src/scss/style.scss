@@ -8,12 +8,6 @@
 
 // Стили по умолчанию(изменять только согласуя это с командой)
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
 .title {
     @extend %fontTitle;
 }
@@ -30,5 +24,7 @@
     padding: 20px;
 }
 
-
 // Место для импортов
+
+@import './modules/custom/mainModule.scss';
+

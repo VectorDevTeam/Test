@@ -109,9 +109,10 @@ ol {
   list-style: none;
 }
 
-a[class] {
+a {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 img {
@@ -146,13 +147,6 @@ select {
   font-style: normal;
   line-height: 80px;
   text-align: center;
-}
-
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .container {
