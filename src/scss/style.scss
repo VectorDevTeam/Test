@@ -1,0 +1,34 @@
+// Импорт шрифтов
+@import './modules/default/fonts.scss';
+// Обнуляем стили
+@import './modules/default/nullstyle.scss';
+// Импорт миксинов, шаблонов и переменных
+@import './modules/default/elements.scss';
+
+
+// Стили по умолчанию(изменять только согласуя это с командой)
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.title {
+    @extend %fontTitle;
+}
+
+.text {
+    @extend %fontText;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+// Место для импортов

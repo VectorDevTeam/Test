@@ -1,0 +1,54 @@
+$clrPrimary: #a8ff35;
+$clrGreen2: #87d322;
+$clrBtnHov: #82b935;
+$clrGray1: #8b8b8b;
+$clrGray2: #adadad;
+$clrGray3: #f5f5f5;
+$clrGray4: #f1f1f1;
+
+// Миксин для шрифтов
+@mixin font($ff, $fw, $fs, $lh, $clr) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-style: $fs;
+  line-height: $lh;
+  color: $clr;
+}
+
+// Шаблон для шрифтов - обычный шрифт для текста
+%fontText {
+  font-family: "Effra";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  line-height: 27px;
+}
+
+// Шаблон для шрифтов - шрифт для заголовка
+%fontTitle {
+  font-family: "Effra";
+  font-size: 72px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 80px;
+  text-align: center;
+}
+
+// Миксин для флекс контейнеров
+@mixin flex($jc, $ai, $fld) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fld;
+}
+
+// Миксин для размеров и отступов
+
+@mixin display($dsp, $w, $h, $mar, $pad) {
+  display: $dsp;
+  width: $w;
+  height: $h;
+  margin: $mar;
+  padding: $pad;
+}
