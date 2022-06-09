@@ -1,20 +1,28 @@
 // Импорт шрифтов
-@import './modules/default/fonts.scss';
+@import "./modules/default/fonts.scss";
 // Обнуляем стили
-@import './modules/default/nullstyle.scss';
+@import "./modules/default/nullstyle.scss";
 // Импорт миксинов, шаблонов и переменных
-@import './modules/default/elements.scss';
-
+@import "./modules/default/elements.scss";
 
 // Стили по умолчанию(изменять только согласуя это с командой)
 
 .title {
     @extend %fontTitle;
+
+    @media screen and (max-width: 767px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
 }
 
 .text {
     @extend %fontText;
-    
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 21px;
+      }
 }
 
 .container {
@@ -26,5 +34,6 @@
 
 // Место для импортов
 
-@import './modules/custom/mainModule.scss';
+@import "./modules/custom/header.scss";
 
+@import "./modules/custom/mainModule.scss";
